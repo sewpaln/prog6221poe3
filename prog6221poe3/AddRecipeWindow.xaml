@@ -1,0 +1,15 @@
+﻿<Window x:Class="prog6221poe3.AddRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Recipe" Height="450" Width="400">
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="RecipeNameTextBox" Text="Enter Recipe Name" Margin="10"/>
+            <TextBox x:Name="NumIngredientsTextBox" Text="Enter Number of Ingredients" Margin="10" LostFocus="NumIngredientsTextBox_LostFocus"/>
+            <StackPanel x:Name="IngredientsPanel" Margin="10"/>
+            <TextBox x:Name="NumStepsTextBox" Text="Enter Number of Steps" Margin="10" LostFocus="NumStepsTextBox_LostFocus"/>
+            <StackPanel x:Name="StepsPanel" Margin="10"/>
+            <Button Content="Add Recipe" Click="AddRecipe_Click" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
